@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Receber Doações</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="doeagora.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="form.js"></script>
+    <script src="navbar.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+</head>
+
+<body>
+    <!--NavBar-->
+    <span id="nav-bar"></span>
+    <!--NavBar-->
+
+    <header>
+        <h1> Contribua <span style="color:#f88f06">agora</span>!</h1>
+    </header>
+
+    <body>
+        <p>Contribua para a aquisição de transportes, materiais escolares e cestas básicas. Com a sua ajuda os alunos
+            terão melhores oportunidades de estudo, evitando a evasão escolar e construindo uma melhor qualidade de
+            vida. Confira abaixo as chaves pix, as doações podem ser feitas através do e-mail, CNPJ ou QR Code. Após
+            isso preencha o formulário informando seu nome, e-mail e mande uma foto do comprovante para que os nossos
+            colaboradores possam verificar a sua colaboração. Nossos alunos agradecem a sua contribuição!</p>
+
+            <div class="div-pix-infos"><b>As chaves pix seguem abaixo:</b></div>
+            <div class="div-pix-infos"><span style="color:#f88f06">E-mail:</span> institutojpe@gmail.com </div>
+            <div class="div-pix-infos"><span style="color:#f88f06">CNPJ:</span> 17.559.970/0001-24 </b></div>
+            <div class="div-pix-infos"><b>Ou também pelo QR Code:</b></div>
+            <div class="div-pix-infos"><img class="img-qrcode" src="qrcodefake.png"></div>
+
+        <h2>Preencha o fomulário abaixo e envie o comprovante!</h2>
+
+        <div class="div-form-doacao">
+            <form action="#" onsubmit="mensagemDoacoes()">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" required />
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" required />
+                <label for="email">Celular</label>
+                <input type="text" name="celular" id="celular" required />
+                <label for="comprovante">Comprovante</label>
+                <input class="input-comprovante" type="file" name="comprovante" id="comprovante" required />
+                <label for="mensagem">Mensagem</label>
+                <textarea name="mensagem" id="mensagem" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+
+    </body>
+
+    <footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social_icon">
+            <li><a href="https://m.facebook.com/100088505079385/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </li>
+            <li><a href="http://api.whatsapp.com/send?1=pt_BR&phone=5547999264659 " target="_blank"><i
+                        class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.instagram.com/institutojpe/" target="_blank"><i class="fa fa-instagram"
+                        aria-hidden="true"></i></a></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="site2.html">Home</a></li>
+            <li><a href="sobrenos.html">Sobre</a></li>
+            <li><a href="receberdoacoes.html">Participe</a></li>
+            <li><a href="relatorios.html">Relatórios</a></li>
+            <li><a href="doeagora.html"> Doar</a></li>
+        </ul>
+        <p style="font-size: 15px;">institutojpe@gmail.com</p>
+        <p>&copy Instituto - Juntos pela Educação</p>
+    </footer>
+
+</body>
+
+</html>

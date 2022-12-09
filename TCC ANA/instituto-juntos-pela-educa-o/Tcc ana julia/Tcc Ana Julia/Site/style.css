@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,200;1,300;1,400&display=swap');
+
+nav {
+    position: fixed;
+    top: 0;
+    display: flex;
+    width: 100%;
+    background-color: #113D80;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px 0 50px;
+    flex-wrap: wrap;
+    min-width: 1000px;
+}
+
+nav .logo {
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0,3s ease;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    background: #f88f06;
+}
+
+nav .menu-btn i{
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+.dropdown-menu {
+    width: 8.5%;
+    min-width: 150px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px -2px rgba(0, 0, 0, 0.5);
+    position: relative;
+    left: 0;
+    top: 100%;
+    display: flex;
+    background-color: #113D80;
+    z-index: 10;
+    float: right;
+    height: 100%;
+}
+
+.dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 3.5%;
+    overflow: hidden;
+    border-radius: 5px;
+    z-index: 10;
+    height: 100%;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+.dropdown-menu li {
+    margin-top: 2.5%;
+    margin-bottom: 5%;
+}
+
+.dropdown-menu a {
+    width: 100%;
+    color: white;
+    text-decoration: none;
+    padding: 3px 7px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0,3s ease;
+}
+
+.dropdown-menu a:hover {
+    background: #f88f06;
+}
+
+.dropdown-container {
+    width: 99%;
+    min-width: 99%;
+    display: none;
+    margin: 0;
+    position: fixed;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Relatórios</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="navbar.js"></script>
+  <script>
+    function openModal(idImg){
+      console.log(idImg);
+
+      var modal = document.getElementById("myModal");
+
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById(idImg);
+
+      var modalImg = document.getElementById("img01");
+      modal.style.display = "block";
+      modalImg.src = img.src;
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+      modal.style.display = "none";
+      }
+    }
+  </script>
+ <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+ <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+ <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="stylesheet" href="relatorios.css">
+</head>
+
+<!--NavBar-->
+<span id="nav-bar"></span>
+<!--NavBar-->
+
+<header>
+  
+</header>
+
+<body>
+  <div class="div-relatorios">
+    <h1 class="relatorios-title">Relatórios do <span style="color:#f88f06">JPE</span></h1>
+    <p>
+      " O Instituto Juntos Pela Educação contribuiu muito com materiais escolares que ajudaram no meu desenvolvimento na escola, sou muito grata pelo apoio do Instituto JPE que me ajudou a ampliar meus resultados e a não desistir dos meus estudos." <span class="citacao">- Susan (Estudante), 2022</span>
+    </p>
+    <p>"JPE me fez acreditar que eu consigo ter um futuro melhor, 
+      com a ajuda deles eu voltei a estudar e acreditar em mim mesmo, 
+     tive apoio de com materiais, vale transporte e ótimas oportunidades." <span class="citacao">- Bryan (Estudante), 2022</span>
+    </p>
+    <p>"Nós todos e principalmente  os nossos alunos agradecemos a ajuda do Instituto JPE que conseguiu doações para nossas crianças, ficamos muito felizes com a boa qualidade de estudo que agora podemos dar á eles. Recebemos doações de lápis, cadernos, canetas, borrachas sendo disponibilizadas para os alunos que mais necessitam, tudo graças aos colaboradores do Instituto Juntos Pela Educação." <span class="citacao">- CEI Estrelinha de Sol (Instituição), 2022</span>
+    </p>
+    <p>"Nossa Escola junto com os alunos estamos felizes com a ajuda dos colaboradores do JPE, com o apoio que recebemos conseguimos colocar Internet na escola, para que os alunos possam fazer trabalhos e pesquisas o que ampliou muito os conhecimentos e qualidade de ensino." <span class="citacao">- E.M Doutor Francisco (Instituição), 2022</span>
+    </p>
+    <p>"Agradecemos a ajuda que recebemos do JPE
+      Nossos alunos ficaram muito felizes ao receber seus cadernos e apostilas de estudos para um melhor aprendizado. Os mais carentes receberam cestas basicas o que diminuiu a evasão escolar." <span class="citacao">- E.M.Professor Salvador Dalí (Instituição), 2022</span>
+    </p>
+    <p>" Estamos gratos pela ajuda que o Instituto JPE nos forneceu, com isso conseguimos comprar diversos livros para nossa biblioteca, incentivando à leitura, algo muito importante para o desenvolvimento e aprendizado. Nunca vi a nossa antiga biblioteca tão cheia quanto agora." <span class="citacao">- Escola de Ensino Médio Frida Kahlo (Instituição), 2022</span>
+    </p>
+    <p>"Quando estava prestes a desistir dos meus estudos para ajudar no sustento da casa e começar a trabalhar, o Instituto Juntos Pela Educação me deu novas oportunidades, recebi doações de cestas basicas, e materiais escolares algo que ajudou nas despesas de casa, além disso recebo vale transporte e assim consigo ir á escola todos os dias." <span class="citacao">- Josiel (Estudante), 2022</span>
+    </p>
+    <p>"O instituto Jpe forneceu diversos materiais e uniformes para mim e para minha irmãzinha, depois disso não precisamos mais ter vergonha de frequêntar a escola, agora temos as vestimentas adequadas e materiais de ótima qualidade." <span class="citacao">- Laura (Estudante), 2022</span>
+    </p>
+  </div>
+  <div class="div-portfolio">
+    <h1 class="relatorios-title">Portfólio do <span style="color:#f88f06">JPE</span></h1>
+    <div class="portfolio">
+      <img id="img1" class="imgs-portfolio" src="carrossel1.jpg" onclick="openModal('img1')">
+      <img id="img2" class="imgs-portfolio" src="carrossel2.jpg" onclick="openModal('img2')">
+      <img id="img3" class="imgs-portfolio" src="carrossel3.jpg" onclick="openModal('img3')">
+      <img id="img4" class="imgs-portfolio" src="carrossel4.jpg" onclick="openModal('img4')">
+      <img id="img5" class="imgs-portfolio" src="relatorio1.jpg" onclick="openModal('img5')">
+      <img id="img6" class="imgs-portfolio" src="relatorio2.jpg" onclick="openModal('img6')">
+      <img id="img7" class="imgs-portfolio" src="relatorio3.jpg" onclick="openModal('img7')">
+      <img id="img8" class="imgs-portfolio" src="menino onibus.jpg" onclick="openModal('img8')">
+      <img id="img9" class="imgs-portfolio" src="jovem uniformes.jpg" onclick="openModal('img9')">
+      <img id="img10" class="imgs-portfolio" src="jovem.jpg" onclick="openModal('img10')">
+      <img id="img11" class="imgs-portfolio" src="relatorio4.jpg" onclick="openModal('img11')">
+      <img id="img12" class="imgs-portfolio" src="material.jpg" onclick="openModal('img12')">
+    </div>
+  </div>
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+  <!-- The Close Button -->
+  <span class="close">&times;</span>
+
+  <!-- Modal Content (The Image) -->
+  <img class="modal-content" id="img01">
+
+  </div>
+</body>
+
+<!--Footer-->
+<footer>
+  <div class="waves">
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
+  </div>
+  <ul class="social_icon">
+      <li><a href="https://m.facebook.com/100088505079385/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+      <li><a href="http://api.whatsapp.com/send?1=pt_BR&phone=5547999264659" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
+      <li><a href="https://www.instagram.com/institutojpe/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+  </ul>
+  <ul class="menu">
+    <li><a href="site2.html">Home</a></li>
+    <li><a href="sobrenos.html">Sobre</a></li>
+    <li><a href="receberdoacoes.html">Participe</a></li>
+    <li><a href="relatorios.html">Relatórios</a></li>
+    <li><a href="doeagora.html">Doar</a></li>
+  </ul>
+  <P style="font-size: 15px">institutojpe@gmail.com</P>
+      <p>&copy Instituto - Juntos pela Educação</p>
+</footer>
+<!--Footer-->
+
+</html>
